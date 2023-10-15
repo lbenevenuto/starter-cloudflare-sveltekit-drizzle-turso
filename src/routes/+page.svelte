@@ -1,4 +1,16 @@
+<script>
+	import posthog from "posthog-js";
+
+	function trackVideoClick() {
+		console.log('Test Click Local');
+		posthog.capture('Luiz Test Click Local', {
+			test: 'Test Luiz Local'
+		});
+	}
+</script>
 <h1 class='text-7xl font-bold text-center'>Home</h1>
+
+<a href="/" on:click={()=>trackVideoClick()} class="btn btn-primary">Test</a>
 
 <div class='mx-auto max-w-4xl my-4'>
 	<div class='mockup-code'>

@@ -1,5 +1,5 @@
 import { SendEmailCommand, SESClient } from '@aws-sdk/client-ses';
-import {AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY, AWS_SES_RETURNPATH, AWS_SES_SOURCE} from '$env/static/private';
+import { AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY, AWS_SES_RETURNPATH, AWS_SES_SOURCE } from '$env/static/private';
 import type { User as LuciaUser } from 'lucia';
 import { generateEmailVerificationToken, generatePasswordResetToken } from '$lib/server/tokens';
 
